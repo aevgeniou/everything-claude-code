@@ -1,40 +1,16 @@
 {
   "branch": "main",
-  "head_sha": "cb81f1b0fe5566c37093858b67fc861801eba62c",
-  "ci_status": "unknown (offline/error)",
+  "head_sha": "c725c990a952147db942da808c0b2fe242f4dd81",
+  "ci_status": "in_progress",
   "changed_routes": [],
   "open_prs": [],
   "open_issues": [],
   "recent_commits": [
     {
-      "sha": "cb81f1b0fe5566c37093858b67fc861801eba62c",
-      "author": "Affaan Mustafa",
-      "date": "2026-05-18T16:45:31-04:00",
-      "message": "docs: narrow ecc tools billing blocker"
-    },
-    {
-      "sha": "7e2cdeaeb5a86dec15e385bb2b6fc24b763901ab",
-      "author": "Affaan Mustafa",
-      "date": "2026-05-18T16:27:09-04:00",
-      "message": "docs: refresh rc1 operator evidence"
-    },
-    {
-      "sha": "4470e2e6702f17099d6feb137ba03ff00582c202",
-      "author": "Affaan Mustafa",
-      "date": "2026-05-18T16:12:37-04:00",
-      "message": "docs: refresh rc1 publication evidence"
-    },
-    {
-      "sha": "67e63e63f9bfd074bd6a21bf6bac71f3dfefa58b",
-      "author": "Affaan Mustafa",
-      "date": "2026-05-18T15:36:39-04:00",
-      "message": "docs: align publication readiness evidence"
-    },
-    {
-      "sha": "fe7b4f2ba3b3d3678a32280a4c75112afbec7c2f",
-      "author": "Affaan Mustafa",
-      "date": "2026-05-18T15:24:25-04:00",
-      "message": "docs: regenerate operator readiness dashboard"
+      "sha": "c725c990a952147db942da808c0b2fe242f4dd81",
+      "author": "aevgeniou",
+      "date": "2026-06-02T20:19:03-04:00",
+      "message": "feat(agent): daily repo-status pipeline + AGENTS.md pre-edit gate"
     }
   ],
   "verified": [
