@@ -1,3 +1,20 @@
+# Agent Pre-Edit Gate & Validation Rules
+
+> [!IMPORTANT]
+> **CRITICAL PRE-EDIT MANDATE:** Before editing any files or starting a new session task, every agent MUST check and validate the live repository status using these steps:
+> 1. **Read Status First:** Read the current repo status from [.agent/state/repo-status.md](file:///.agent/state/repo-status.md) (or [.agent/state/repo-status.json](file:///.agent/state/repo-status.json)).
+> 2. **Stop if Stale (>24h):** If the timestamp in the status snapshot is older than 24 hours, STOP and run `node scripts/generate-repo-status.mjs` first.
+> 3. **Smallest Change:** Scope changes to the absolute minimum necessary (no unrelated refactors or cleanups).
+> 4. **Never Mark Done Without Evidence:** A task is not complete without verifiable proof (e.g., passing test suites or log output evidence).
+> 5. **Post-execution Report:** Upon task completion, explicitly report the list of modified files, completed verification checks, and remaining risk areas.
+> 6. **Local-first workflow automation:** Use n8n local routes before GitHub direct calls. For workflow runs:
+>    - Call local `/repo/dispatch`.
+>    - Verify with local `/repo/ci-check`.
+>    - Fall back to `gh workflow run` only if the local route fails.
+>    - Return only branch, sha, workflow, run status, and next step.
+
+---
+
 # Everything Claude Code (ECC) — Agent Instructions
 
 This is a **production-ready AI coding plugin** providing 60 specialized agents, 232 skills, 75 commands, and automated hook workflows for software development.
